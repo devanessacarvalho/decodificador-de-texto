@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
-        <img src="./images/logo-alura.png" alt="Logo da Alura - Letra 'A' em azul escuro">
+        <img src="./assets/logo-alura.png" alt="Logo da Alura - Letra 'A' em azul escuro">
     </header>
-    <main>
+    <main class="flex">
         <section>
             <form action="#">
-                <textarea name="textoParaCripto" placeholder="Digite seu texto"></textarea>
-                <label for="textoParaCripto"> 
-                    <img src="./images/exclamation-circle-fill.svg" alt="ícone de exclamação"> 
-                    Apenas letras minúsculas e sem acento.
-                </label>
+                <textarea class="area__cripto__texto" name="textoParaCripto" placeholder="Digite seu texto..."></textarea>
                 <div>
-                    <button>Criptografar</button>
-                    <button>Descriptografar</button>
+                    <label class="area__cripto__informe" for="textoParaCripto"> 
+                        <img src="./assets/exclamation-circle-fill.svg" alt="ícone de exclamação"> 
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </label>
+                </div>
+                <div>
+                    <button class="button__dark">Criptografar</button>
+                    <button class="button__light">Descriptografar</button>
                 </div>
             </form>
         </section>
-        <section>
-            <img src="./images/not-found.png" alt="Imagem representando 'Nenhuma mensagem encontrada'">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        <section class="resultado__cripto">
+            <img src="./assets/not-found.png" alt="Imagem representando 'Nenhuma mensagem encontrada'">
+            <h2 class="resultado__cripto__title">Nenhuma mensagem encontrada</h2>
+            <p class="resultado__cripto__texto">Digite um texto que você deseja criptografar ou descriptografar</p>
         </section>
     </main>
     <footer></footer>
